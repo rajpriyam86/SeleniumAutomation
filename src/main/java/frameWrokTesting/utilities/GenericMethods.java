@@ -1,4 +1,4 @@
-package utilities;
+package frameWrokTesting.utilities;
 
 import java.time.Duration;
 
@@ -45,6 +45,10 @@ public GenericMethods(WebDriver driver) {
 		Actions action = new Actions(driver);
 		action.moveToElement(element).click().build().perform();
 		
+	}
+	
+	public void goTo(String url) {
+		driver.get(url);
 	}
 	
 	

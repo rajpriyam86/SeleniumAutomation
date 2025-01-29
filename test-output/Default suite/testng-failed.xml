@@ -3,20 +3,17 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="FrameWrokTesting.EndToEndTesting">
-        <methods>
-          <include name="loginTest"/>
-        </methods>
-      </class> <!-- FrameWrokTesting.EndToEndTesting -->
+      <class name="FrameWrokTesting.tests.EndToEndTesting"/>
     </classes>
   </test> <!-- Default test -->
   <test parallel="none" name="Default test(failed)">
     <classes>
-      <class name="FrameWrokTesting.EndToEndTesting">
+      <class name="FrameWrokTesting.tests.EndToEndTesting">
         <methods>
-          <include name="loginTest"/>
+          <include name="resgistartionTest"/>
+          <include name="submitOrder"/>
         </methods>
-      </class> <!-- FrameWrokTesting.EndToEndTesting -->
+      </class> <!-- FrameWrokTesting.tests.EndToEndTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

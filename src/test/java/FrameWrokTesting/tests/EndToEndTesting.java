@@ -1,21 +1,22 @@
-package FrameWrokTesting;
+package FrameWrokTesting.tests;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.BaseTest;
-import frameWrokTesting.CartPage;
-import frameWrokTesting.LoginPage;
-import frameWrokTesting.OrderConfirmationPage;
-import frameWrokTesting.PaymentPage;
-import frameWrokTesting.ProductCataloguePage;
-import frameWrokTesting.RegistrationPage;
+import FrameWrokTesting.base.BaseTest;
+import frameWrokTesting.pageComponents.CartPage;
+import frameWrokTesting.pageComponents.LoginPage;
+import frameWrokTesting.pageComponents.OrderConfirmationPage;
+import frameWrokTesting.pageComponents.PaymentPage;
+import frameWrokTesting.pageComponents.ProductCataloguePage;
+import frameWrokTesting.pageComponents.RegistrationPage;
 
 public class EndToEndTesting extends BaseTest {
 
 
 		String userFirstName = "User";
 		String userLastName = "Test";
-		String userEmailId = "usertest84567@gmail.com";
+		String userEmailId = "usertest82107@gmail.com";
 		String userMobileNumber = "8542136582";
 		String userOccupation = "Student";
 //		String userGender = null;
@@ -33,6 +34,9 @@ public class EndToEndTesting extends BaseTest {
 		// Getting the product list from user
 		String productToBuy = "iPhone,qwerty";
 		
+		//URL
+		String url = "https://rahulshettyacademy.com/client";
+		
 		String[] shoppingItems;
 
 
@@ -41,47 +45,30 @@ public class EndToEndTesting extends BaseTest {
 		@Test
 		public void resgistartionTest() throws InterruptedException {
 		RegistrationPage registrationPage = new RegistrationPage(getDriver());
-		registrationPage.formFillUp(userFirstName, userLastName, userEmailId, userMobileNumber, userOccupation,
+		registrationPage.goTo(url);
+		String accountCreationConfirmation = registrationPage.formFillUp(userFirstName, userLastName, userEmailId, userMobileNumber, userOccupation,
 				setPassword);
+		Assert.assertEquals(accountCreationConfirmation, "Account Created Successfully");
 		}
 
 		// Login
 		@Test(dependsOnMethods = "resgistartionTest")
-		public void loginTest() {
-		driver.get("https://rahulshettyacademy.com/client");
-
+		public void submitOrder() throws InterruptedException {
 		LoginPage loginPage = new LoginPage(getDriver());
+		loginPage.goTo(url);
 		loginPage.login(userName, password);
-		}
-
-		
-		@Test(dependsOnMethods = "loginTest")
-		public void selectProduct() throws InterruptedException {
 		ProductCataloguePage productCatalogue = new ProductCataloguePage(getDriver());
 		shoppingItems = productCatalogue.selectProduct(productToBuy);
-		}
-		
-		
-
-		@Test(dependsOnMethods = "selectProduct")
-		public void confirmItems() throws InterruptedException {
 		// Cross checking the items are correct or not
 		CartPage cartPage = new CartPage(driver);
 		cartPage.checkItems(shoppingItems);
 		// proceed to buy
 		cartPage.proceedToBuy();
-		}
-		
-		@Test(dependsOnMethods = "confirmItems")
-		public void makePayment() throws InterruptedException {
 		PaymentPage paymentPage = new PaymentPage(driver);
 		paymentPage.paymentProcess(cvv, name, country);
-		}
-
-		@Test(dependsOnMethods = "makePayment")
-		public void orderConfirmation() throws InterruptedException {
 		OrderConfirmationPage confirmOrder = new OrderConfirmationPage(driver);
 		confirmOrder.confirmOrder();
+		
 		}
 
 

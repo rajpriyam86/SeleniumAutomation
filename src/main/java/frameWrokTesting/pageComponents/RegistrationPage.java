@@ -1,12 +1,14 @@
-package frameWrokTesting;
+package frameWrokTesting.pageComponents;
 
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 
-import utilities.GenericMethods;
+import frameWrokTesting.utilities.GenericMethods;
 
 public class RegistrationPage extends GenericMethods {
 
@@ -42,7 +44,15 @@ public class RegistrationPage extends GenericMethods {
 	WebElement confirmPassword;
 	// Submit Button
 	@FindBy(xpath = "//input[@type = 'checkbox']")
+	WebElement ageConfirmation;
+	
+	@FindBy(id = "login")
 	WebElement submitButton;
+	
+	
+	@FindBy(xpath ="//h1[@class='headcolor']")
+	WebElement confirmationMsg;
+	
 
 	public RegistrationPage(WebDriver driver) {
 		super(driver);
@@ -50,7 +60,7 @@ public class RegistrationPage extends GenericMethods {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void formFillUp(String userFirstName, String userLastName,String userEmailId,String userMobileNumber,String userOccupation,String setPassword) {
+	public String formFillUp(String userFirstName, String userLastName,String userEmailId,String userMobileNumber,String userOccupation,String setPassword) {
 
 		registerButton.click();
 		firstName.sendKeys(userFirstName);
@@ -62,7 +72,16 @@ public class RegistrationPage extends GenericMethods {
 		gender.click();
 		userPassword.sendKeys(setPassword);
 		confirmPassword.sendKeys(setPassword);
+		ageConfirmation.click();
 		submitButton.click();
+		try {
+		    if (confirmationMsg.isDisplayed()) {
+		        System.out.println("Confirmation message is displayed: " + confirmationMsg.getText());
+		    }
+		} catch (NoSuchElementException e) {
+		    System.err.println("Error: Confirmation message not found. Please change the email.");
+		}
+		return confirmationMsg.getText();
 
 	}
 

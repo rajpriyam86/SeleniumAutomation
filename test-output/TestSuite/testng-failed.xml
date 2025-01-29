@@ -5,7 +5,20 @@
   <test name="LoginTest">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="FrameWrokTesting.EndToEndTesting"/>
+      <class name="FrameWrokTesting.tests.EndToEndTesting"/>
     </classes>
   </test> <!-- LoginTest -->
+  <test name="LoginTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="FrameWrokTesting.tests.EndToEndTesting">
+        <methods>
+          <include name="resgistartionTest"/>
+          <include name="closeWindow"/>
+          <include name="submitOrder"/>
+          <include name="browserSetup"/>
+        </methods>
+      </class> <!-- FrameWrokTesting.tests.EndToEndTesting -->
+    </classes>
+  </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

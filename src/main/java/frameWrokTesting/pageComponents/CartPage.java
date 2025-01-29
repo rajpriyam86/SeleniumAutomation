@@ -1,4 +1,4 @@
-package frameWrokTesting;
+package frameWrokTesting.pageComponents;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import utilities.GenericMethods;
+import frameWrokTesting.utilities.GenericMethods;
 
 public class CartPage extends GenericMethods{
 	

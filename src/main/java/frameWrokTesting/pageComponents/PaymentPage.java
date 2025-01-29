@@ -1,4 +1,4 @@
-package frameWrokTesting;
+package frameWrokTesting.pageComponents;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import utilities.GenericMethods;
+import frameWrokTesting.utilities.GenericMethods;
 
 public class PaymentPage extends GenericMethods {
 	
