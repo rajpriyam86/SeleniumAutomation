@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-29T12:11:33Z" name="TestSuite" finished-at="2025-01-29T12:12:05Z" duration-ms="31674">
+    <groups>
+    </groups>
+    <test started-at="2025-01-29T12:11:33Z" name="LoginTest" finished-at="2025-01-29T12:12:05Z" duration-ms="31674">
+      <class name="FrameWrokTesting.EndToEndTesting">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:41:33Z" name="browserSetup" finished-at="2025-01-29T17:41:48Z" duration-ms="14711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="resgistartionTest()[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:41:48Z" name="resgistartionTest" finished-at="2025-01-29T17:41:52Z" duration-ms="3779" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resgistartionTest -->
+        <test-method signature="loginTest()[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:41:52Z" name="loginTest" finished-at="2025-01-29T17:41:53Z" depends-on-methods="FrameWrokTesting.EndToEndTesting.resgistartionTest" duration-ms="831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method signature="selectProduct()[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:41:53Z" name="selectProduct" finished-at="2025-01-29T17:41:58Z" depends-on-methods="FrameWrokTesting.EndToEndTesting.loginTest" duration-ms="4973" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+        <test-method signature="confirmItems()[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:41:58Z" name="confirmItems" finished-at="2025-01-29T17:42:00Z" depends-on-methods="FrameWrokTesting.EndToEndTesting.selectProduct" duration-ms="1982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmItems -->
+        <test-method signature="makePayment()[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:42:00Z" name="makePayment" finished-at="2025-01-29T17:42:03Z" depends-on-methods="FrameWrokTesting.EndToEndTesting.confirmItems" duration-ms="3232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- makePayment -->
+        <test-method signature="orderConfirmation()[pri:0, instance:FrameWrokTesting.EndToEndTesting@687e99d8]" started-at="2025-01-29T17:42:03Z" name="orderConfirmation" finished-at="2025-01-29T17:42:05Z" depends-on-methods="FrameWrokTesting.EndToEndTesting.makePayment" duration-ms="2130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderConfirmation -->
+      </class> <!-- FrameWrokTesting.EndToEndTesting -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- TestSuite -->
+</testng-results>

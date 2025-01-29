@@ -1,4 +1,4 @@
-package FrameWrokTesting;
+package frameWrokTesting;
 
 import java.util.List;
 
@@ -8,11 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductCatalogue extends GenericMethods{
+import utilities.GenericMethods;
+
+public class ProductCataloguePage extends GenericMethods{
 	
 	WebDriver driver;
 
-	public ProductCatalogue(WebDriver driver) {
+	public ProductCataloguePage(WebDriver driver) {
 		super(driver);
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
