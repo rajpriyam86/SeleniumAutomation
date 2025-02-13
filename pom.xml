@@ -84,7 +84,7 @@
 							<version>3.5.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>testRunnerXml.registration.xml</suiteXmlFile>
+									<suiteXmlFile>testRunnerXml/registration.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -104,7 +104,7 @@
 							<version>3.5.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>testRunnerXml.testng.xml</suiteXmlFile>
+									<suiteXmlFile>testRunnerXml/testng.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -125,7 +125,7 @@
 							<version>3.5.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>testRunnerXml.error.xml</suiteXmlFile>
+									<suiteXmlFile>testRunnerXml/error.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
@@ -145,7 +145,7 @@
 							<version>3.5.2</version>
 							<configuration>
 								<suiteXmlFiles>
-									<suiteXmlFile>testRunnerXml.regression.xml</suiteXmlFile>
+									<suiteXmlFile>testRunnerXml/regression.xml</suiteXmlFile>
 								</suiteXmlFiles>
 							</configuration>
 						</plugin>
