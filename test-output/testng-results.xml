@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="2" passed="0" failed="1" skipped="1">
+<testng-results total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-29T17:39:29Z" name="TestSuite" finished-at="2025-01-29T17:39:58Z" duration-ms="29371">
+  <suite started-at="2025-02-07T17:45:20Z" name="TestSuite" finished-at="2025-02-07T17:45:53Z" duration-ms="32801">
     <groups>
     </groups>
-    <test started-at="2025-01-29T17:39:29Z" name="LoginTest" finished-at="2025-01-29T17:39:58Z" duration-ms="29371">
-      <class name="FrameWrokTesting.tests.EndToEndTesting">
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@687e99d8]" started-at="2025-01-29T23:09:29Z" name="browserSetup" finished-at="2025-01-29T23:09:39Z" duration-ms="10280" status="PASS">
+    <test started-at="2025-02-07T17:45:20Z" name="LoginTest" finished-at="2025-02-07T17:45:53Z" duration-ms="32801">
+      <class name="FrameWrokTesting.tests.LoginErrorest">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:FrameWrokTesting.tests.LoginErrorest@125290e5]" started-at="2025-02-07T23:15:42Z" name="browserSetup" finished-at="2025-02-07T23:15:45Z" duration-ms="3001" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,29 +18,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method signature="resgistartionTest()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@687e99d8]" started-at="2025-01-29T23:09:39Z" name="resgistartionTest" finished-at="2025-01-29T23:09:57Z" duration-ms="18430" status="FAIL">
+        <test-method signature="errorValidations()[pri:0, instance:FrameWrokTesting.tests.LoginErrorest@125290e5]" started-at="2025-02-07T23:15:45Z" name="errorValidations" finished-at="2025-02-07T23:15:52Z" duration-ms="7333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- errorValidations -->
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:FrameWrokTesting.tests.LoginErrorest@125290e5]" started-at="2025-02-07T23:15:52Z" name="closeWindow" finished-at="2025-02-07T23:15:53Z" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeWindow -->
+      </class> <!-- FrameWrokTesting.tests.LoginErrorest -->
+      <class name="FrameWrokTesting.tests.EndToEndTesting">
+        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6]" started-at="2025-02-07T23:15:20Z" name="browserSetup" finished-at="2025-02-07T23:15:23Z" duration-ms="3510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+        <test-method signature="resgistartionTest()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6]" started-at="2025-02-07T23:15:23Z" name="resgistartionTest" finished-at="2025-02-07T23:15:42Z" duration-ms="18570" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='headcolor']"}
-  (Session info: MicrosoftEdge=132.0.2957.127)
+  (Session info: MicrosoftEdge=132.0.2957.140)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [31d24f7b89660d6aa5c9a814e16772f3, findElement {using=xpath, value=//h1[@class='headcolor']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.127, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59053}, msedge: {msedgedriverVersion: 132.0.2957.127 (cbce079b96b..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59053/devtoo..., se:cdpVersion: 132.0.2957.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 31d24f7b89660d6aa5c9a814e16772f3]]>
+Command: [7a3529d090daa3bcaab96b3e47b810ae, findElement {using=xpath, value=//h1[@class='headcolor']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54246}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54246/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a3529d090daa3bcaab96b3e47b810ae]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h1[@class='headcolor']"}
-  (Session info: MicrosoftEdge=132.0.2957.127)
+  (Session info: MicrosoftEdge=132.0.2957.140)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.28.1', revision: '73f5ad48a2'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.1'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [31d24f7b89660d6aa5c9a814e16772f3, findElement {using=xpath, value=//h1[@class='headcolor']}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.127, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:59053}, msedge: {msedgedriverVersion: 132.0.2957.127 (cbce079b96b..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59053/devtoo..., se:cdpVersion: 132.0.2957.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 31d24f7b89660d6aa5c9a814e16772f3
+Command: [7a3529d090daa3bcaab96b3e47b810ae, findElement {using=xpath, value=//h1[@class='headcolor']}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54246}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54246/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7a3529d090daa3bcaab96b3e47b810ae
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
@@ -57,7 +78,7 @@ Session ID: 31d24f7b89660d6aa5c9a814e16772f3
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy13.getText(Unknown Source)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
 	at frameWrokTesting.pageComponents.RegistrationPage.formFillUp(RegistrationPage.java:84)
 	at FrameWrokTesting.tests.EndToEndTesting.resgistartionTest(EndToEndTesting.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
@@ -88,17 +109,17 @@ Session ID: 31d24f7b89660d6aa5c9a814e16772f3
           <reporter-output>
           </reporter-output>
         </test-method> <!-- resgistartionTest -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@687e99d8]" started-at="2025-01-29T23:09:57Z" name="closeWindow" finished-at="2025-01-29T23:09:58Z" duration-ms="614" status="PASS">
+        <test-method is-config="true" signature="closeWindow()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6]" started-at="2025-02-07T23:15:42Z" name="closeWindow" finished-at="2025-02-07T23:15:42Z" duration-ms="158" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeWindow -->
-        <test-method signature="submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@687e99d8]" started-at="2025-01-29T23:09:58Z" name="submitOrder" finished-at="2025-01-29T23:09:58Z" depends-on-methods="FrameWrokTesting.tests.EndToEndTesting.resgistartionTest" duration-ms="0" status="SKIP">
+        <test-method signature="submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6]" started-at="2025-02-07T23:15:42Z" name="submitOrder" finished-at="2025-02-07T23:15:42Z" depends-on-methods="FrameWrokTesting.tests.EndToEndTesting.resgistartionTest" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
-              <![CDATA[Method EndToEndTesting.submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@687e99d8] depends on not successfully finished methods]]>
+              <![CDATA[Method EndToEndTesting.submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6] depends on not successfully finished methods]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method EndToEndTesting.submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@687e99d8] depends on not successfully finished methods
+              <![CDATA[java.lang.Throwable: Method EndToEndTesting.submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6] depends on not successfully finished methods
 	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)

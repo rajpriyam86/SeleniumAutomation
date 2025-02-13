@@ -16,7 +16,7 @@ public class EndToEndTesting extends BaseTest {
 
 		String userFirstName = "User";
 		String userLastName = "Test";
-		String userEmailId = "usertest82107@gmail.com";
+		String userEmailId = "usertest791@gmail.com";
 		String userMobileNumber = "8542136582";
 		String userOccupation = "Student";
 //		String userGender = null;

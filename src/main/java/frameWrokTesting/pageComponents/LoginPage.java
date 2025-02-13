@@ -28,6 +28,9 @@ public class LoginPage extends GenericMethods{
 	@FindBy(id = "login")
 	WebElement loginButton;
 	
+	@FindBy(xpath="//div[@id='toast-container']/div")
+	WebElement errorMsg;
+	
 	
 	public void login(String userName, String password) {
 		
@@ -37,5 +40,16 @@ public class LoginPage extends GenericMethods{
 		
 		
 	}
+	public String errorLogin(String userName, String password) {
+		
+		userEmail.sendKeys(userName);
+		userPassword.sendKeys(password);
+		loginButton.click();
+		return errorMsg.getText();
+		
+		
+		
+	}
+	
 
 }
