@@ -15,7 +15,7 @@ public class Registration extends BaseTest {
 
 	String userFirstName = "User";
 	String userLastName = "Test";
-	String userEmailId = "usertest794@gmail.com";
+	String userEmailId = "usertest7909@gmail.com";
 	String userMobileNumber = "8542136582";
 	String userOccupation = "Student";
 	// String userGender = null;

@@ -2,31 +2,16 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-13T07:41:17Z" name="TestSuite" finished-at="2025-02-13T07:41:26Z" duration-ms="8943">
+  <suite started-at="2025-02-13T19:42:13Z" name="TestSuite" finished-at="2025-02-13T19:42:14Z" duration-ms="1587">
     <groups>
     </groups>
-    <test started-at="2025-02-13T07:41:17Z" name="LoginTest" finished-at="2025-02-13T07:41:26Z" duration-ms="8943">
-      <class name="FrameWrokTesting.tests.LoginErrorest">
-        <test-method is-config="true" signature="browserSetup(java.lang.String)[pri:0, instance:FrameWrokTesting.tests.LoginErrorest@6a47b187]" started-at="2025-02-13T13:11:17Z" name="browserSetup" finished-at="2025-02-13T13:11:21Z" duration-ms="4186" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2025-02-13T19:42:13Z" name="LoginTest" finished-at="2025-02-13T19:42:14Z" duration-ms="1587">
+      <class name="FrameWrokTesting.APITesting.responseValidation">
+        <test-method signature="checkCourse()[pri:0, instance:FrameWrokTesting.APITesting.responseValidation@2049a9c1]" started-at="2025-02-14T01:12:13Z" name="checkCourse" finished-at="2025-02-14T01:12:14Z" duration-ms="1564" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method signature="errorValidations()[pri:0, instance:FrameWrokTesting.tests.LoginErrorest@6a47b187]" started-at="2025-02-13T13:11:21Z" name="errorValidations" finished-at="2025-02-13T13:11:26Z" duration-ms="4517" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- errorValidations -->
-        <test-method is-config="true" signature="closeWindow()[pri:0, instance:FrameWrokTesting.tests.LoginErrorest@6a47b187]" started-at="2025-02-13T13:11:26Z" name="closeWindow" finished-at="2025-02-13T13:11:26Z" duration-ms="216" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeWindow -->
-      </class> <!-- FrameWrokTesting.tests.LoginErrorest -->
+        </test-method> <!-- checkCourse -->
+      </class> <!-- FrameWrokTesting.APITesting.responseValidation -->
     </test> <!-- LoginTest -->
   </suite> <!-- TestSuite -->
 </testng-results>
