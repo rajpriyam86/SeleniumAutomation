@@ -6,7 +6,6 @@
     <test name="LoginTest">
         <parameter name="browser" value="edge"/> 
         <classes>
-            <class name="FrameWrokTesting.tests.Purchase"/>
             <class name="FrameWrokTesting.tests.LoginErrorest"/>
             
         </classes>

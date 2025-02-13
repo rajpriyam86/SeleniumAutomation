@@ -1,5 +1,6 @@
 package frameWrokTesting.pageComponents;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,6 +32,8 @@ public class LoginPage extends GenericMethods{
 	@FindBy(xpath="//div[@id='toast-container']/div")
 	WebElement errorMsg;
 	
+	By errorElement = By.xpath("//div[@id='toast-container']/div");
+	
 	
 	public void login(String userName, String password) {
 		
@@ -45,6 +48,8 @@ public class LoginPage extends GenericMethods{
 		userEmail.sendKeys(userName);
 		userPassword.sendKeys(password);
 		loginButton.click();
+		waitForElement(errorElement);
+		
 		return errorMsg.getText();
 		
 		

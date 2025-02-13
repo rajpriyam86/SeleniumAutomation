@@ -6,15 +6,4 @@
       <class name="FrameWrokTesting.tests.LoginErrorest"/>
     </classes>
   </test> <!-- Default test -->
-  <test parallel="none" name="Default test(failed)">
-    <classes>
-      <class name="FrameWrokTesting.tests.LoginErrorest">
-        <methods>
-          <include name="closeWindow"/>
-          <include name="browserSetup"/>
-          <include name="errorValidations"/>
-        </methods>
-      </class> <!-- FrameWrokTesting.tests.LoginErrorest -->
-    </classes>
-  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

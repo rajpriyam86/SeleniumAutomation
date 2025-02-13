@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-TestSuite" class="navigator-link">
-              <span class="suite-name border-failed">TestSuite</span>
+              <span class="suite-name border-passed">TestSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-TestSuite" class="navigator-link ">
-                    <span>F:\Automation Project\Amazon.in\FrameWrokTesting\testng.xml</span>
+                    <span>F:\Automation Project\Amazon.in\FrameWrokTesting\error.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-TestSuite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,35 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,  1 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-TestSuite" class="hide-methods failed suite-TestSuite"> (hide)</a> <!-- hide-methods failed suite-TestSuite -->
-                      <a href="#" panel-name="suite-TestSuite" class="show-methods failed suite-TestSuite"> (show)</a> <!-- show-methods failed suite-TestSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-TestSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="FrameWrokTesting.tests.EndToEndTesting" class="method navigator-link" hash-for-method="resgistartionTest">resgistartionTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-TestSuite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-TestSuite" class="hide-methods skipped suite-TestSuite"> (hide)</a> <!-- hide-methods skipped suite-TestSuite -->
-                      <a href="#" panel-name="suite-TestSuite" class="show-methods skipped suite-TestSuite"> (show)</a> <!-- show-methods skipped suite-TestSuite -->
-                    </span>
-                    <div class="method-list-content skipped suite-TestSuite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-TestSuite" title="FrameWrokTesting.tests.EndToEndTesting" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-TestSuite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -145,66 +117,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestSuite" class="panel TestSuite">
-          <div class="suite-TestSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">FrameWrokTesting.tests.EndToEndTesting</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="resgistartionTest">
-                  </a> <!-- resgistartionTest -->
-                  <span class="method-name">resgistartionTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[@class=&apos;headcolor&apos;]&quot;}
-  (Session info: MicrosoftEdge=132.0.2957.140)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;18.0.1&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [7a3529d090daa3bcaab96b3e47b810ae, findElement {using=xpath, value=//h1[@class=&apos;headcolor&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 132.0.2957.140, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:54246}, msedge: {msedgedriverVersion: 132.0.2957.140 (a81e27b375d..., userDataDir: C:\Users\Dell\AppData\Local...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54246/devtoo..., se:cdpVersion: 132.0.2957.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7a3529d090daa3bcaab96b3e47b810ae
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)
-	at frameWrokTesting.pageComponents.RegistrationPage.formFillUp(RegistrationPage.java:84)
-	at FrameWrokTesting.tests.EndToEndTesting.resgistartionTest(EndToEndTesting.java:49)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-failed -->
-          <div class="suite-TestSuite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">FrameWrokTesting.tests.EndToEndTesting</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
-                  <span class="method-name">submitOrder</span>
-                  <div class="stack-trace">java.lang.Throwable: Method EndToEndTesting.submitOrder()[pri:0, instance:FrameWrokTesting.tests.EndToEndTesting@46271dd6] depends on not successfully finished methods
-... Removed 17 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-TestSuite-class-skipped -->
           <div class="suite-TestSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -223,7 +135,7 @@ Session ID: 7a3529d090daa3bcaab96b3e47b810ae
         </div> <!-- panel TestSuite -->
         <div panel-name="test-xml-TestSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Automation Project\Amazon.in\FrameWrokTesting\testng.xml</span>
+            <span class="header-content">F:\Automation Project\Amazon.in\FrameWrokTesting\error.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -236,29 +148,9 @@ Session ID: 7a3529d090daa3bcaab96b3e47b810ae
   &lt;test name=&quot;LoginTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;FrameWrokTesting.tests.EndToEndTesting&quot;/&gt;
       &lt;class name=&quot;FrameWrokTesting.tests.LoginErrorest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- LoginTest --&gt;
-  &lt;test name=&quot;LoginTest(failed)&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;FrameWrokTesting.tests.EndToEndTesting&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;resgistartionTest&quot;/&gt;
-          &lt;include name=&quot;closeWindow&quot;/&gt;
-          &lt;include name=&quot;submitOrder&quot;/&gt;
-          &lt;include name=&quot;browserSetup&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- FrameWrokTesting.tests.EndToEndTesting --&gt;
-      &lt;class name=&quot;FrameWrokTesting.tests.LoginErrorest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;closeWindow&quot;/&gt;
-          &lt;include name=&quot;browserSetup&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- FrameWrokTesting.tests.LoginErrorest --&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- LoginTest(failed) --&gt;
 &lt;/suite&gt; &lt;!-- TestSuite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -270,10 +162,7 @@ Session ID: 7a3529d090daa3bcaab96b3e47b810ae
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">LoginTest (2 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">LoginTest(failed) (2 classes)</span>
+                <span class="test-name">LoginTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -299,24 +188,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'resgistartionTest')
-data.setCell(0, 2, 'FrameWrokTesting.tests.EndToEndTesting')
-data.setCell(0, 3, 18570);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'errorValidations')
-data.setCell(1, 2, 'FrameWrokTesting.tests.LoginErrorest')
-data.setCell(1, 3, 7333);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'submitOrder')
-data.setCell(2, 2, 'FrameWrokTesting.tests.EndToEndTesting')
-data.setCell(2, 3, 0);
+data.setCell(0, 1, 'errorValidations')
+data.setCell(0, 2, 'FrameWrokTesting.tests.LoginErrorest')
+data.setCell(0, 3, 4517);
 window.suiteTableData['TestSuite']= { tableData: data, tableDiv: 'times-div-TestSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-TestSuite">
               </div> <!-- times-div-TestSuite -->
             </div> <!-- times-div -->
@@ -342,35 +223,18 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">FrameWrokTesting.tests.EndToEndTesting</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">FrameWrokTesting.tests.LoginErrorest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">browserSetup(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">resgistartionTest</span>
-                <span class="method-start">3510 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">closeWindow</span>
-                <span class="method-start">22114 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">FrameWrokTesting.tests.LoginErrorest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">browserSetup(edge)</span>
-                <span class="method-start">22278 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
                 <span class="method-name">errorValidations</span>
-                <span class="method-start">25279 ms</span>
+                <span class="method-start">4186 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">closeWindow</span>
-                <span class="method-start">32616 ms</span>
+                <span class="method-start">8714 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
