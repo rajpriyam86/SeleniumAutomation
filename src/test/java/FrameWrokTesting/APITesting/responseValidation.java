@@ -60,7 +60,7 @@ public class responseValidation extends dummyResponses {
 			total += ammount;
 		}
 		
-			softAssert.assertEquals(total, 910);
+			softAssert.assertEquals(total, 915);
 			
 			
 		}
